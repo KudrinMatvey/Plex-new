@@ -5,9 +5,9 @@ void TPoint::Show(Graphics ^gr)
 	if (visible)
 	{
 		if (active)
-			gr->FillEllipse(Brushes::BlueViolet, x - 2, y - 2, 5, 5);
+			gr->FillEllipse(Brushes::Turquoise, x - 2, y - 2, 5, 5);
 		else
-			gr->FillEllipse(Brushes::BlueViolet, x - 2, y - 2, 5, 5);
+			gr->FillEllipse(Brushes::Black, x - 2, y - 2, 5, 5);
 	}
 }
 
@@ -128,7 +128,7 @@ void TChart::Show(Graphics ^gr)
 			if (curr.tc->visible)
 			{
 				if (curr.tc->active)
-					gr->DrawLine(Pens::DarkGoldenrod, curr.pb->x, curr.pb->y, curr.pe->x, curr.pe->y);
+					gr->DrawLine(Pens::Turquoise, curr.pb->x, curr.pb->y, curr.pe->x, curr.pe->y);
 				else
 					gr->DrawLine(Pens::Black, curr.pb->x, curr.pb->y, curr.pe->x, curr.pe->y);
 			}

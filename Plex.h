@@ -4,9 +4,6 @@
 using namespace std;
 using namespace System::Drawing;
 
-
-
-
 class TRoot;
 class TPoint;
 class TChart;
@@ -16,8 +13,6 @@ struct TCurrLine {
 	TPoint *pb;
 	TPoint *pe;
 };
-
-
 
 class TRoot {
 protected:
@@ -39,8 +34,6 @@ public:
 	bool GetActive() { return active; }
 	bool GetVisible() { return visible; }
 };
-
-
 
 class TPoint : public TRoot {
 public:
