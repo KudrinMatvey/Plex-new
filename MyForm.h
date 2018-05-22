@@ -33,7 +33,7 @@ namespace Plex_new {
 	private: System::Windows::Forms::Button^  button4;
 			 bool mouse;
 
-		MyForm(void)
+			 public:	MyForm(void)
 		{
 			InitializeComponent();
 			//
@@ -435,9 +435,11 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 		button3->Text = "Deletion Mode";
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+	plex->Hide(gr);
 	if (plex != NULL)
 		plex->Move(gr, (int)numericUpDown1->Value, (int)numericUpDown2->Value);
-
+	
+	plex->Show(gr);
 }
 };
 };

@@ -9,7 +9,7 @@ void Main()
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	
+
 	Plex_new::MyForm form;
 	Application::Run(%form);
 }
